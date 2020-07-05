@@ -1,11 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `The Smart Home Life`,
+    description: `The latest news and info about building an affordable Apple Smart Home`,
+    author: `@joshowens`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -15,6 +16,14 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-youtube`,
+      options: {
+        channelId: 'UCMpUX3ABNV2gWs5rTJvpPHA',
+        apiKey: 'AIzaSyCyTlGO028c6eHNAH_0TkKm0JCqkNIaykY',
+        maxVideos: 50 // Defaults to 50
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
