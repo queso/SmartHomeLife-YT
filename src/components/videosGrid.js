@@ -1,6 +1,11 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
+import tw, { styled } from "twin.macro"
 import VideoLink from './VideoLink';
+
+const Container = tw.div`
+  flex flex-wrap
+`
 
 const VideosGrid = () => {
 	const data = useStaticQuery(graphql`
@@ -28,11 +33,11 @@ const VideosGrid = () => {
 	`);
 
 	return (
-		<div>
+    <Container>
     {data.allYoutubeVideo.edges.map(({ node: video }) => {
 				return <VideoLink key={video.videoId} {...video} />;
 			})}
-		</div>
+    </Container>
 	)
 }
 
