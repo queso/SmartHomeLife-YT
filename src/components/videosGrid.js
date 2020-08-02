@@ -10,7 +10,7 @@ const Container = tw.div`
 const VideosGrid = () => {
 	const data = useStaticQuery(graphql`
 		query {
-			allYoutubeVideo {
+			allYoutubeVideo (sort: {order: DESC, fields: publishedAt}){
 				edges {
 					node {
             id
