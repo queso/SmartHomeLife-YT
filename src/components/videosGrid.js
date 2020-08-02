@@ -1,7 +1,7 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import tw, { styled } from "twin.macro"
-import VideoLink from './VideoLink';
+import VideoLink from './videoLink';
 
 const Container = tw.div`
   flex flex-wrap
