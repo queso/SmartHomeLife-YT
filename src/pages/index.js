@@ -20,7 +20,7 @@ const Para = tw.p`
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Heading>The Smart Home Life</Heading>
+    <Heading>The HomeKit Life</Heading>
     <Para>A news site all about building an affordable Apple Smart Home</Para>
     <VideosGrid />
   </Layout>
