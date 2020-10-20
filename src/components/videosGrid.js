@@ -4,7 +4,7 @@ import tw, { styled } from "twin.macro"
 import VideoLink from './videoLink';
 
 const Container = tw.div`
-  flex flex-wrap
+  flex flex-wrap justify-center
 `
 
 const VideosGrid = () => {

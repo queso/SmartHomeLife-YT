@@ -4,7 +4,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `The Smart Home Life`,
+    title: `The HomeKit Life`,
     description: `The latest news and info about building an affordable Apple Smart Home`,
     author: `@joshowens`,
   },

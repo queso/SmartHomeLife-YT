@@ -19,12 +19,19 @@ const Layout = ({ children }) => {
           title
         }
       }
+      file(relativePath: { eq: "homekit-life-logo.png" }) {
+        childImageSharp {
+          fixed(height: 100, quality: 100) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
     }
   `)
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header data={data} />
       <div
         style={{
           margin: `0 auto`,

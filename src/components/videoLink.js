@@ -8,7 +8,7 @@ const Img = tw.img`
 `
 
 const Container = tw.div`
-  max-w-sm rounded overflow-hidden shadow-lg my-8 mr-16
+  max-w-sm rounded overflow-hidden shadow-lg my-8 md:mx-4 lg:mx-8 content-center
 `
 
 const TitleContainer = tw.div`
