@@ -7,21 +7,20 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import VideosGrid from "../components/videosGrid"
 
-const Heading = tw.h1`
-  text-xl
-  lg:ml-8
-  md:ml-4
+const Container = tw.div`
+ flex flex-wrap justify-center
 `
-const Para = tw.p`
-  text-sm
+
+const Para = tw.h2`
   md:ml-4
   lg:ml-8
 `
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Heading>The HomeKit Life</Heading>
-    <Para>A news site all about building an affordable Apple Smart Home</Para>
+    <Container>
+      <Para>A news site all about building an affordable Apple Smart Home</Para>
+    </Container>
     <VideosGrid />
   </Layout>
 )
